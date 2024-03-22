@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(239, 241, 241);
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100vh;
+}
+
+.weather{
+    background-color: aqua;
+    max-width: 600px;
+    margin: 30px auto;
+    padding: 30px;
+    border-radius: 25px;
+    border: 2px solid black;
+   
+}
+
+.search{
+    display: flex;
+    align-items: center;
+}
+
+input[type="text"]{
+    flex: 1;
+    padding: 20px;
+    border: 2px solid rgb(7, 27, 100);
+    border-radius: 15px;
+    font-size: 1rem;
+
+}
+
+.search-btn{
+    background-color: rgb(29, 12, 105);
+    border: none;
+    padding: 15px;
+    border-radius: 15px;
+    cursor: pointer;
+    color: white;
+    margin-left: 10px;
+    transition: background-color 0.3s ease;
+
+}
+
+
+.search-btn:hover{
+    background-color: rgb(25, 101, 216);
+}
+
+.city{
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.city h2{
+    font-size: 2rem;
+    opacity: 0.9;
+}
+
+.city p{
+    background-color: rgb(215, 200, 200);
+    padding: 5px 10px;
+    border-radius: 15px;
+}
+
+.temprature{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.temprature .temp{
+    font-size: 10rem;
+}
+
+.temprature .desc{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.temprature .desc i{
+    font-size: 1.5rem;
+    opacity: 0.8;
+}
+
+.temprature .desc span{
+    font-size: 1.5rem;
+    text-transform: capitalize;
+}
+
+.feature{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.windinfo, .humidityinfo, .visibilityinfo{
+    background-color: rgb(234, 241, 230);
+    width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 15px;
+    border-radius: 15px;
+    padding: 30px 20px;
+    box-shadow: rgb(0, 0, 0);
+
+}
+
+.feature .material-icons{
+    font-size: 3rem;
+    opacity: 0.8;
+}
+
+.windinfo div, .humidityinfo div, .visibilityinfo div{
+    text-align: center;
+}
